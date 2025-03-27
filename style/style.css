@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Nunito-Regular;
+}
+
+header {
+    margin: 30px 60px;
+}
+
+header h1 {
+    font-size: 1.2em;
+    margin-right: 250px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    padding: 0 20px;
+    text-align: center;
+}
+.list-items{
+margin: 0 0 0 30px;
+}
+.first-button{
+    padding:7px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color:#06E6B2;
+    color: white;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-top: -10px;
+}
