@@ -2,6 +2,7 @@
     font-family: Nunito-Regular;
     src: url(../fonts/Nunito-Regular.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +12,11 @@
 
 header {
     margin: 30px 60px;
+    color: #06105e;
 }
 
 header h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-right: 250px;
 }
 
@@ -31,16 +33,94 @@ header ul li {
     padding: 0 20px;
     text-align: center;
 }
-.list-items{
-margin: 0 0 0 30px;
+
+header ul li:hover {
+    color: #06E6B2;
+    cursor: pointer;
+    transition: ease 0.3s;
 }
-.first-button{
-    padding:7px 25px;
+
+.list-items {
+    margin: 0 0 0 30px;
+}
+
+.first-button {
+    padding: 7px 25px;
     border: none;
     border-radius: 20px;
-    background-color:#06E6B2;
+    background-color: #06E6B2;
     color: white;
     font-size: 15px;
     margin-left: 250px;
     margin-top: -10px;
+}
+
+.first-button:hover {
+    background-color: white;
+    color: #06E6B2;
+    border: solid 1px #06E6B2;
+    transition: ease-in 0.3s;
+}
+
+.corona-content {
+    margin: 10px 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+.corona-text {
+    margin-top: 110px;
+    margin-right: 180px;
+}
+
+.corona-content span {
+    color: #06E6B2;
+    font-size: 1.1em;
+}
+
+.corona-content h1 {
+    font-size: 2.7em;
+    margin-bottom: 18px;
+    color: #06105e;
+}
+
+.corona-content img {
+    width: 480px;
+    height: 480px;
+}
+
+.corona-content p {
+    color: #777;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.service-button {
+    border-radius: 20px;
+    border: solid #06E6B2 2px;
+    background-color: #06E6B2;
+    color: white;
+    padding: 9px 24px;
+}
+
+.service-button:hover {
+    background-color: white;
+    color: #06E6B2;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.support-button {
+    border-radius: 20px;
+    border: solid #06E6B2 2px;
+    background-color: white;
+    color: #06E6B2;
+    padding: 9px 35px;
+    margin-left: 22px;
+}
+.support-button:hover {
+    color: white;
+    background-color: #06E6B2;
+    transition:  ease 0.3s;
+    cursor: pointer;
 }
