@@ -17,7 +17,7 @@ header {
 
 header h1 {
     font-size: 1.3em;
-    margin-right: 250px;
+    margin-right: 230px;
 }
 
 header ul {
@@ -63,7 +63,7 @@ header ul li:hover {
 }
 
 .corona-content {
-    margin: 10px 55px;
+    margin: 10px 55px 0 55px;
     display: flex;
     flex-direction: row;
 }
@@ -118,9 +118,118 @@ header ul li:hover {
     padding: 9px 35px;
     margin-left: 22px;
 }
+
 .support-button:hover {
     color: white;
     background-color: #06E6B2;
-    transition:  ease 0.3s;
+    transition: ease 0.3s;
     cursor: pointer;
+}
+
+.statistics-container {
+    margin: 0 70px;
+}
+
+.statistics-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.statistics-title {
+    color: #06E6B2;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#countries {
+    border-radius: 20px;
+    background-color: white;
+    color: #9e9d9d;
+    border: solid 1px #c3c1c1;
+    padding: 5px 135px 5px 4px;
+    margin: 1px 15px 1px 3px;
+}
+
+#date-select {
+    border-radius: 20px;
+    background-color: white;
+    color: #9e9d9d;
+    border: solid 1px #c3c1c1;
+    padding: 5px 150px 5px 6px;
+    margin: 1px 10px 1px 5px;
+}
+
+#statistics-button {
+    background-color: #06E6B2;
+    border-radius: 20px;
+    color: white;
+    padding: 7px 40px;
+    border: 1px solid #06E6B2;
+    margin: 1px 25px 1px 15px;
+}
+#statistics-button:hover {
+    background-color:white;
+    color: #06E6B2;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.numbers {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #081785;
+}
+
+.yellow-numbers {
+    color: #FFB01C;
+}
+
+.numbers li {
+    padding: 60px 103.5px 10px 0;
+}
+
+.details {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #06E6B2;
+}
+.recovered{
+    padding-left:9px !important;
+}
+.details li {
+    padding: 1px 76px 20px 0;
+}
+
+.day-statistics {
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
+    padding: 15px 20px;
+}
+.day-statistics h1{
+    color: #06E6B2;
+    margin-bottom:10px;
+    font-size: 0.9em;
+}
+.today-statistics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+.today-statistics p{
+  color: #06E6B2;
+}
+.blue-numbers{
+    color: #091784;
+}
+.green-numbers{
+    color: #06E6B2;
 }

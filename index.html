@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="icon" type="image/x-icon" href="images/corona icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Corona Virus statistics</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -25,15 +27,70 @@
     <main>
         <section class="corona-content">
             <div class="corona-text">
-            <h1><span>corona </span>virus statistics</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit voluptate, repellendus explicabo eius maiores iste.
-            </p>
-            <button class="service-button">Our service</button>
-            <button class="support-button">Support</button>
-        </div>
-        <div class="corona-image">
-            <img src="images/doctor.jpg" alt="doctor image">
-        </div>
+                <h1><span>corona </span>virus statistics</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit voluptate, repellendus explicabo
+                    eius maiores iste.
+                </p>
+                <button class="service-button">Our service</button>
+                <button class="support-button">Support</button>
+            </div>
+            <div class="corona-image">
+                <img src="images/doctor.jpg" alt="doctor image">
+            </div>
+        </section>
+        <section class="statistics-container">
+            <h1 class="statistics-title">STATISTICS</h1>
+            <div class="statistics-content">
+                <div class="statistics">
+                    <select id="countries" name="countries">
+                        <option id="canada" value="canada">🇨🇦 Canada</option>
+                        <option value="china">🇨🇳 China</option>
+                        <option value="brazil">🇧🇷 Brazil</option>
+                        <option value="india">🇮🇳 India</option>
+                        <option value="usa">🇺🇸 Usa</option>
+                    </select>
+                    <select id="date-select" name="date-select">
+                        <option value="Date">Date</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                    </select>
+                    <input type="button" id="statistics-button" value="Filter">
+                    <ul class="numbers">
+                        <li>14</li>
+                        <li>12,456</li>
+                        <li class="yellow-numbers">836</li>
+                        <li>12,456</li>
+                        <li>12,456</li>
+                    </ul>
+                    <ul class="details">
+                        <li>Rank</li>
+                        <li>Total Cases</li>
+                        <li>Death</li>
+                        <li class="recovered">Recovered</li>
+                        <li class="recovered">Recovered</li>
+                    </ul>
+                </div>
+                <div class="day-statistics">
+                    <h1>TODAY STATISTICS</h1>
+                    <hr />
+                    <div class="today-statistics">
+                        <p><b class="blue-numbers">2,464</b><br>Total Cases</p>
+                        <p><b class="green-numbers">981</b><br>Recovered</p>
+                        <p><b class="blue-numbers">1,643</b><br>Infected Now</p>
+                        <p><b class="yellow-numbers">542</b><br>Death</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
