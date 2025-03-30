@@ -167,8 +167,9 @@ header ul li:hover {
     border: 1px solid #06E6B2;
     margin: 1px 25px 1px 15px;
 }
+
 #statistics-button:hover {
-    background-color:white;
+    background-color: white;
     color: #06E6B2;
     transition: ease 0.3s;
     cursor: pointer;
@@ -195,9 +196,11 @@ header ul li:hover {
     flex-direction: row;
     color: #06E6B2;
 }
-.recovered{
-    padding-left:9px !important;
+
+.recovered {
+    padding-left: 9px !important;
 }
+
 .details li {
     padding: 1px 76px 20px 0;
 }
@@ -210,26 +213,94 @@ header ul li:hover {
     box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
     padding: 15px 20px;
 }
-.day-statistics h1{
+
+.day-statistics h1 {
     color: #06E6B2;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     font-size: 0.9em;
 }
-.today-statistics{
+
+.today-statistics {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     row-gap: 15px;
     column-gap: 15px;
     padding: 15px 0;
     font-size: 1.1em;
 }
-.today-statistics p{
-  color: #06E6B2;
+
+.today-statistics p {
+    color: #06E6B2;
 }
-.blue-numbers{
+
+.blue-numbers {
     color: #091784;
 }
-.green-numbers{
+
+.green-numbers {
     color: #06E6B2;
+}
+
+.chart-container-title {
+color: #06E6B2;
+font-size: 1.8em;
+padding: 60px 0 15px 65px;
+}
+.chart-content{
+    display: flex;
+    flex-direction: row;
+    margin:0 60px;
+}
+.chart-content h4{
+    color: #0a20c7;
+    font-size: 0.7em;
+    padding: 10px;
+}
+.chart-statistics {
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
+    padding: 15px 20px;
+    margin-left: 25px;
+}
+
+.chart-statistics h1 {
+    color:#06105e;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.chart-statistics-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 15px;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+.first-chart{
+    width: 340px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
+}
+.first-chart img{
+    width: 340px;
+    height: 140px;
+    text-align: center;
+}
+.secound-chart{
+    width: 340px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
+    margin-left: 25px;
+}
+.secound-chart img{
+    width: 340px;
+    height: 140px;
 }
