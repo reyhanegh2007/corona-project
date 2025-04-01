@@ -689,5 +689,21 @@ h4,
     border-radius: 20px;
     padding:8px 19px;
     color: white;
-    
+}
+.footer-button:hover{
+    background-color: white;
+    color:#06E6B2;
+    transition: ease-in 0.3s;
+}
+.last-footer{
+    width: 100%;
+    height: 80px;
+    background-color: #e5e4e4;
+    text-align: center;
+}
+.last-footer a{
+    text-decoration: none;
+    display: block;
+    padding-top: 30px;
+    color:rgb(2, 135, 179);
 }
