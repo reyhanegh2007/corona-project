@@ -632,3 +632,62 @@ h4,
     right: -10px;
     z-index: -1;
 }
+
+.first-footer {
+    margin:95px 65px 0 65px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.footer-title {
+    color: #06E6B2;
+    padding: 10px 0;
+}
+.menu-container {
+   width: 25%;
+}
+
+.menu-container li {
+    color: #06105e;
+    list-style-type: none;
+    padding: 5px;
+}
+.about-us-container {
+    width: 31%;
+}
+.about-us-container p{
+ color: #06105e;
+ line-height: 2.2;
+}
+.inputs{
+    margin: 70px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.email-input{
+    display: flex;
+    flex-direction: row;
+}
+.email-input input{
+    border: 1px solid #d1cfcf;
+    border-radius: 20px;
+    color: #d1cfcf;
+    position: relative;
+    padding: 6px 0 6px 29px;
+    margin: 0 15px 0 50px;
+}
+.fa-envelope{
+    color: #c3c1c1;
+    position: absolute;
+    padding: 11px 0 0 60px;
+}
+.footer-button{
+    background-color: #06E6B2;
+    border: 1px solid #06E6B2;
+    border-radius: 20px;
+    padding:8px 19px;
+    color: white;
+    
+}
