@@ -13,6 +13,10 @@
 header {
     margin: 30px 60px;
     color: #06105e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 header h1 {
@@ -27,6 +31,8 @@ header ul {
     direction: ltr;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 header ul li {
