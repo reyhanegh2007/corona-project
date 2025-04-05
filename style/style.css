@@ -212,7 +212,7 @@ header ul li:hover {
 }
 
 .day-statistics {
-    height: 180px;
+    height: 150px;
     width: 300px;
     background-color: white;
     border-radius: 8px;
@@ -525,7 +525,7 @@ header ul li:hover {
     transform: rotate(53deg);
 }
 .chart-statistics {
-    height: 180px;
+    height: 150px;
     width: 300px;
     background-color: white;
     border-radius: 8px;
