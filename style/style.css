@@ -268,6 +268,144 @@ header ul li:hover {
     padding: 10px;
 }
 
+.y-labels {
+    float: left;
+    margin: 30px 5px 0 5px;
+    text-align: right;
+}
+
+.y-labels div {
+    height: 20px;
+    font-size: 0.6em;
+    line-height: right;
+}
+
+.first-chart {
+    width: 340px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
+}
+
+.first-chart-detail {
+    position: rlative;
+    width: 300px;
+    height: 150px;
+    margin: 1px 0 0 19px;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    height: 87%;
+    background: repeating-linear-gradient(to top, #eee 0px, #eee 1px,
+            transparent 1px, transparent 20px);
+}
+
+.points {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-repeat: none;
+    background: #09cea0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#point-one {
+    left: 7%;
+    top: 87%;
+}
+#point-two {
+    left: 19%;
+    top: 64%;
+}
+#point-three {
+    left: 32%;
+    top: 70%;
+}
+#point-four {
+    left: 44.5%;
+    top: 42%;
+}
+#point-five {
+    left: 56.5%;
+    top: 26%;
+}
+#point-six {
+    left: 69.5%;
+    top: 42%;
+}
+#point-seven {
+    left: 81%;
+    top: 28%;
+}
+#point-eight {
+    left: 96%;
+    top: 11%;
+}
+
+.line {
+    position: relative;
+    height: 2px;
+    background: #06E6B2;
+    transform-origin: left;
+    z-index: 1;
+}
+#line-one{
+    left:7%;
+    top:50%;
+    width: 49px;
+    transform:rotate(-38deg);
+}
+#line-two{
+    left:19%;
+    top:30%;
+    width: 41px;
+    transform:rotate(24deg);
+}
+#line-three{
+    left:32%;
+    top:40%;
+    width: 55px;
+    transform:rotate(-44deg);
+}
+#line-four{
+    left:44.5%;
+    top:15%;
+    width: 39px;
+    transform:rotate(-27deg);
+}
+
+#line-five{
+    left:56.5%;
+    top:1%;
+    width: 54px;
+    transform:rotate(41deg);
+}
+#line-six{
+    left: 69.5%;
+    top:22.5%;
+    width: 37px;
+    transform:rotate(-25deg);
+}
+#line-seven{
+    left: 81%;
+    top:11%;
+    width: 51px;
+    transform:rotate(-24deg);
+}
+.x-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.x-labels div {
+    width: 60px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
 .chart-statistics {
     height: 150px;
     width: 300px;
@@ -294,30 +432,12 @@ header ul li:hover {
     font-size: 1.1em;
 }
 
-.first-chart {
-    width: 340px;
-    height: 180px;
-    border-radius: 8px;
-    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
-}
-
-.first-chart img {
-    width: 340px;
-    height: 140px;
-    text-align: center;
-}
-
 .secound-chart {
     width: 340px;
     height: 180px;
     border-radius: 8px;
     box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
     margin-left: 25px;
-}
-
-.secound-chart img {
-    width: 340px;
-    height: 140px;
 }
 
 .orders-container {
@@ -350,10 +470,12 @@ header ul li:hover {
     min-width: 400px;
     border-collapse: collapse;
 }
-.table-container{
+
+.table-container {
     width: 100%;
     overflow-x: auto;
 }
+
 .orders-table tr {
     border-bottom: 1px solid #e5e4e4;
 }
