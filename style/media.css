@@ -1,10 +1,11 @@
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1200px) {
     * {
         font-size: 14px;
+        overflow-x: hidden;
     }
 
     header {
-        margin: 30px 20px 0 -50px;
+        margin: 30px 0 0 -20px;
     }
 
     header h1 {
@@ -12,8 +13,9 @@
     }
 
     header ul li {
-        padding: 2px 13px;
-        font-size: 0.85em;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5em;
     }
 
     .first-button {
@@ -21,115 +23,99 @@
     }
 
     .corona-content {
-        margin: 0 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .corona-text {
-        font-size: 0.7em;
-        margin: 30px -19px 0 0;
-        width: 185px;
+        margin-top: 0;
+        margin-left: 7%;
     }
 
     .corona-content img {
-        width: 200px;
-        height: 200px;
-        padding-top: 30px;
-    }
-
-    .service-button {
-        font-size: 1em;
-        padding: 5px 14px;
-    }
-
-    .support-button {
-        font-size: 1em;
-        padding: 5.5px 18px;
-    }
-
-    .statistics {
-        margin-right: -20px;
+        width: 40em;
+        height: 40em;
     }
 
     .statistics-container {
-        margin: 30px 20px;
-        font-size: 0.7em;
+        width: 80%;
+        margin: 10% 0 0 27%;
+    }
+
+    .statistics {
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
     #countries {
-        font-size: 0.6em;
-        padding: 5px 45px 5px 4px;
-        margin-right: 5px;
+        display: block;
+        width: 60%;
     }
 
     #date-select {
-        font-size: 0.6em;
-        padding: 5px 55px 5px 6px;
+        display: block;
+        width: 60%;
+        margin-bottom: 2%;
     }
 
-    .filter-button {
-        font-size: 0.6em;
-        padding: 7px 25px;
-        margin-left: 5px;
-    }
-
-    .numbers li,
-    .details li,
-    .day-statistics,
-    .today-statistics p,
-    .today-statistics p b {
-        font-size: 0.8em;
+    #first-filter-button {
+        margin-left: -40%;
+        text-align: center;
     }
 
     .numbers li {
-        padding: 60px 43.5px 10px 0;
-        margin-top: -22px;
+        padding: 30px 38px 10px 0;
+        width: 8%;
+        font-size: 0.9em;
     }
 
     .details li {
-        padding: 0 21.5px 20px 0;
+        padding: 0 19px 20px 0;
+        width: 10%;
+        font-size: 0.9em;
     }
 
-    .chart-container-title {
-        font-size: 1.3em;
-        padding: 0 0 20px 20px;
+    .day-statistics {
+        width: 57%;
+        height: 190px;
+        overflow-y: hidden;
     }
 
-    .chart-content {
-        margin: 0 20px;
+    .chart-container {
+        padding: 10% 0 0 27%;
     }
 
-    .chart-content h4 {
-        font-size: 0.45em;
-    }
-
-    .first-chart,
-    .secound-chart {
-        width: auto;
+    .chart-box {
+        width: 65%;
         height: auto;
-        margin-bottom: 30px;
     }
 
-    .secound-chart,
+
+    .chart-canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+
     .chart-statistics {
-        margin-left: 0;
+        width: 62%;
+        height: 200px;
+        overflow-y: hidden;
     }
 
     .orders-container {
-        width: 90%;
-    }
-
-    .orders-container {
-        margin-left: 20px;
+        width: 63%;
+        margin-left: 20%;
     }
 
     .orders-table th,
     td {
-        padding: 7px 13px;
-        font-size: 0.65em;
+        font-size: 0.7em;
     }
 
     .orders-title {
-        padding: 10px 0;
+        padding: 10px 15px;
     }
 
     .blog {
@@ -143,28 +129,32 @@
         align-items: center;
     }
 
+    .blog h1 {
+        margin-left: 30%;
+        font-size: 2.2em;
+    }
+
     .secound-part {
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 90px;
+        gap: 0;
         margin-left: 0;
     }
 
-    .image-wrepper img,
-    .first-image {
-        width: 100%;
-        height: auto;
-        position: relative;
+    .first-part h4 {
+        position: absolute;
+        z-index: 4;
+        margin-top: 0px;
+        padding-left: 10px;
     }
 
-    .first-part h4,
     .date,
     .name {
         position: absolute;
-        z-index: 2;
-        margin-top: -60px;
-        padding-left: 10px;
+        z-index: 4;
+        margin-top: 0px;
+        padding-left: 30%;
     }
 
     .first-title,
@@ -182,10 +172,19 @@
         position: relative;
         text-align: center;
         left: 0;
-        top: -70px;
+        top: -80px;
         width: 70%;
         display: block;
         font-size: 0.9em;
+    }
+
+    .image-wrapper img,
+    .first-image {
+        max-width: 100%;
+        min-width: auto;
+        height: auto;
+        position: relative;
+        display: block;
     }
 
     .square {
@@ -193,20 +192,273 @@
     }
 
     .first-footer {
-        margin: 100px 0;
-        justify-content: center;
+        margin-top: 0;
+        margin-left: 30%;
     }
 
     .menu-container,
     .about-us-container {
-        width: 40%;
+        width: 60%;
+        text-align: center;
     }
 
     .inputs {
-        margin-left: -40px;
+        margin: 0 20% 10px 0;
     }
 
-    .last-footer {
-        margin-top: -100px;
+}
+
+@media screen and (max-width: 590px) {
+    * {
+        font-size: 14px;
+        margin-right: 0;
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    header {
+        margin-left: 0;
+    }
+
+    header ul {
+        text-align: center;
+    }
+
+    header ul li {
+        font-size: 0.8em;
+    }
+
+    .corona-content {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+
+    .corona-content img {
+        width: 30em;
+        height: 30em;
+    }
+
+    .corona-text {
+        margin-top: 0;
+        margin-left: 0;
+        width: 500px;
+    }
+
+    .statistics-container {
+        margin: 10% 0 0 10%;
+    }
+
+    #countries {
+        display: block;
+        width: 90%;
+    }
+
+    #date-select {
+        display: block;
+        width: 90%;
+        margin-bottom: 3%;
+    }
+
+    .numbers li {
+        padding: 30px 65px 10px 0;
+        margin-left: 0;
+        width: 8%;
+        font-size: 0.9em;
+    }
+
+    .details li {
+        padding: 0 61px 20px 0;
+        margin-left: 0;
+        width: 12%;
+        font-size: 0.9em;
+    }
+
+    #first-filter-button {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .day-statistics {
+        width: 100%;
+        height: 170px;
+        margin-left: 3%;
+        overflow: hidden;
+    }
+
+    .chart-statistics {
+        width: 85% !important;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .chart-container {
+        padding: 10% 0 0 13%;
+    }
+
+    .chart-box {
+        width: 85%;
+        height: auto;
+    }
+
+    .chart-canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .orders-container {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    .orders-title {
+        padding: 25px 10px 0 0;
+        font-size: 0.7em;
+    }
+
+    .orders-title h1 {
+        padding-top: 9px;
+    }
+
+    .orders-table th,
+    td {
+        font-size: 0.5em;
+    }
+
+    .circle-icons img {
+        width: 16px;
+        height: 16px;
+        margin-left: -1px;
+    }
+
+    .big-icons img {
+        width: 26.5px;
+        height: 26px;
+        margin: -2px -15px;
+    }
+
+    .small-icons img {
+        width: 15px;
+        height: 15px;
+        margin-left: -5px;
+    }
+
+    .canada-icon img {
+        width: 19px;
+        height: 19px;
+        margin-left: -6px;
+    }
+
+    .blog {
+        margin: 0 0 0 3%;
+    }
+
+    .blog-content {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .blog h1 {
+        margin-left: 0;
+        font-size: 2.2em;
+    }
+
+    .first-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .name {
+        margin-top: 30px;
+        padding-left: 0%;
+    }
+
+    .first-part h4 {
+        margin-top: 35px;
+    }
+
+    .image-wrapper {
+        align-items: center;
+    }
+
+    .first-title,
+    .first-date,
+    .first-name,
+    .secound-title,
+    .secound-date,
+    .secound-name,
+    .third-title,
+    .third-date,
+    .third-name,
+    .fourth-title,
+    .fourth-date,
+    .fourth-name {
+        position: relative;
+        text-align: center;
+        left: 0;
+        top: -95px;
+        width: 70%;
+        display: block;
+        font-size: 0.9em;
+    }
+
+    .menu-container,
+    .about-us-container {
+        width: 90%;
+        text-align: center;
+    }
+
+    .inputs {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .crona-content {
+        margin-right: 18%;
+    }
+
+    .corona-text {
+        width: 45%;
+    }
+
+    .statistics-container {
+        margin-left: 18%;
+    }
+
+    .statistics {
+        width: 52%;
+    }
+
+    .chart-statistics {
+        width: 27%;
+    }
+
+    .chart-container {
+        padding: 30px 0 30px 17.5%;
+    }
+
+    .chart-box {
+        width: 24%;
+    }
+
+    .orders-container {
+        width: 65%;
+        margin-left: 17%;
+    }
+
+    .blog {
+        margin-left: 22%;
+    }
+
+    .first-footer {
+        margin-left: 17%;
+    }
+
+    .about-us-container {
+        width: 27%;
     }
 }
