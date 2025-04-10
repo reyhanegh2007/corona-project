@@ -417,48 +417,70 @@
 }
 
 @media screen and (min-width:1400px) {
-    .crona-content {
+    header {
+        margin-right: 8%;
+    }
+
+    .corona-content {
         margin-right: 18%;
     }
 
     .corona-text {
-        width: 45%;
+        width: 48%;
     }
 
-    .statistics-container {
-        margin-left: 18%;
-    }
-
-    .statistics {
-        width: 52%;
-    }
-
-    .chart-statistics {
-        width: 27%;
-    }
-
-    .chart-container {
-        padding: 30px 0 30px 17.5%;
-    }
-
-    .chart-box {
+    .day-statistics {
         width: 24%;
     }
 
+    .statistics-container {
+        margin-left: 17.5%;
+    }
+
+    .statistics {
+        width: 52.5%;
+    }
+
+    .chart-statistics {
+        width: 20%;
+    }
+
+    .chart-content {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .chart-container {
+        padding: 0 5% 0 0;
+    }
+
+    .chart-container-title {
+        margin-left: 18.5%;
+    }
+
+    .chart-box {
+        width: 21%;
+    }
+
     .orders-container {
-        width: 65%;
+        width: 61%;
         margin-left: 17%;
     }
 
     .blog {
-        margin-left: 22%;
+        margin-left: 20%;
     }
 
     .first-footer {
-        margin-left: 17%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu-container {
+        width: 12%;
     }
 
     .about-us-container {
-        width: 27%;
+        width: 20%;
     }
 }
